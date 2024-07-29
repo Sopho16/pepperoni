@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-banner{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center 70%;
+
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 8em;
+    color: darksalmon;
+    text-shadow: 5px 5px 10px black;
+
+
+}
+.intro_p {
+    font-size: 2em;
+}
+.cook-time_header{
+    display: inline-block;
+    font-size: 2.5em;
+    text-transform: none;
+    margin-right: 0.5em;
+
+}
+.cook-time_value{
+    display: inline-block;
+    font-size: 2.5em;
+    text-decoration: underline .75px;
+    font-style: italic;
+    
+
+}
+.element_list dt {
+    text-decoration: underline .5px;
+}
+.element_list dt::after {
+    content: ":";
+}
+.element_list dd, .element_list dt {
+    display: inline-block;
+}
+h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+h3 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.cooking-step_description {
+    padding-left: 36px;
+    list-style-position: inside;
+    counter-reset: bold;
+}
+.cooking-step::before {
+    content: "Шаг " counter (number);
+    counter-increment: number;
+    font-weight: bold;
+    margin-top: 500px;
+
+}
+li {
+    border: 1px solid red;
+}
+
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+p, dl, ol, ul {
+    font-size: 2em;
+}
+dd, dt {
+    display: inline-block;
+}
+ol p {
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 20px;
+    max-width: calc(100% - 460px);
+    vertical-align: top;
+}
+
+.desk {
+    text-align: justify;
+    font-size: 2em;
+    margin: 2em 0;
+}
+.cooking-step__img {
+    max-width: 400px;
+    float: right;
+    vertical-align: middle;
+}
+
+.cooking__note {
+    clear: both;
+}
